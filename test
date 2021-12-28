@@ -1,0 +1,13 @@
+import vk_api
+import schidule
+
+my_token = 'db6ff134eed449c948e3826d8af15ca519f0a9816dad511e29f20cbe7910c3a362e6aa4c4c094e72031fe'
+session = vk_api.VkApi(token = my_token)
+vk = session.get_api()
+
+def auto_date():
+	try:
+		def send(msg):
+	vk.messages.send(user_id = 456585601, message = "С др мышь", random_id = 0)
+
+schidule.every().dat.at("3.00").do(auto_date)
