@@ -14,7 +14,7 @@ def auto_date(vk):
 def msg():
     bot.send_message(message.chat.id, answer)
 
-schedule.every().day.at("18:00").do(msg)
+schedule.every().day.at("3:00").do(msg)
 while True:
     schedule.run_pending()
     time.sleep(1)
